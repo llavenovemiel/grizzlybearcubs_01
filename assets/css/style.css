@@ -1,0 +1,40 @@
+/* base styles */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+/* base styles end */
+
+/* website level styles */
+.red {
+	color: #ef3a4e !important;
+}
+.blue {
+	color: #2994d2 !important;
+}
+.yellow {
+	color: #f3d70e !important;
+}
+.skin {
+	color: #f1cba8 !important;
+}
+.grey {
+	color: #babbbb !important;
+}
+/* website level styles end */
+
+/* nav bar styles */
+.main-nav-container {
+
+}
+.main-nav-items-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.company-logo {
+    width: 250px;
+}
+/* nav bar styles end */
+

@@ -301,6 +301,7 @@ a:hover {
     border-radius: 22.5px;
     background: #f1f1f1;
     transition: 0.5s;
+    width: 180px;
 }
 .send-btn:hover {
     transform: scale(1.15);

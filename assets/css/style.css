@@ -52,6 +52,11 @@ a:hover {
     transition: 0.5s;
     font-family: 'Sniglet', cursive;
 }
+@media screen and (max-width: 930px) {
+    .primary-btn {
+        font-size: 22px;
+    }
+}
 .primary-btn:hover {
     transform: scale(1.15);
 }
@@ -70,40 +75,105 @@ a:hover {
 .main-nav-container {
     font-family: 'Sniglet', cursive;
     border-bottom: 5px solid #2994d2;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f1f1f1;
+    z-index: 100;
 }
-.main-nav-items-container {
+.nav-items-container-desktop {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 100px;
+}
+.nav-items-container-mobile {
+    display: none;
 }
 .company-logo {
     width: 300px;
 }
 .nav-item {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    font-weight: bold;
 }
 .nav-item-link {
     color: #232A34;
     padding: 3px 15px 2px;
     border-radius: 15px;
-    font-size: 16px;
-    font-weight: bold;
 }
 .nav-item-link:hover,
 .nav-item.active > .nav-item-link {
     background-color: #2994d2;
     color: #f1f1f1;
 }
+@media screen and (max-width: 930px) {
+    .main-nav-container {
+        height: 85px;
+    }
+    .nav-items-container-desktop {
+        display: none;
+    }
+    .nav-items-container-mobile {
+        display: block;
+        text-align: center;
+    }
+    .nav-logo-container {
+        width: 85%;
+        padding-left: 15%;
+        text-align: center;
+        display: inline-block;
+    }
+    .company-logo {
+        width: 250px;
+        max-width: 100%;
+    }
+    .nav-toggler-container {
+        width: 15%;
+        text-align: center;
+        display: inline-block;
+        font-size: 35px;
+        position: relative;
+        top: 12px;
+        left: -6px;
+    }
+    #navDropdownToggler {
+        display: none;
+    }
+    .nav-list-mobile {
+        border-bottom: 5px solid #2994d2;
+        background: #f1f1f1;
+        position: relative;
+        top: 2.5px;
+        display: none;
+    }
+    input[type=checkbox]:checked#navDropdownToggler ~ .nav-list-mobile {
+        display: block;
+    }
+    .nav-item {
+        font-size: 20px;
+        border-bottom: 1.5px solid #2994d2;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
 /* nav bar styles end */
 
 /* main styles */
+.main-content-container {
+    margin-top: 100px;
+}
+@media screen and (max-width: 930px) {
+    .main-content-container {
+        margin-top: 85px;
+    }
+}
+
 /* home */
 .home-banner-container {
-    height: 450px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,6 +255,22 @@ a:hover {
     background-size: cover;
     background-position: center;
 }
+@media screen and (max-width: 930px) {
+    .about-link {
+        width: 100%;
+    }
+    .features-row {
+        padding-top: 30px;
+    }
+    .feature {
+        padding-top: 15px;
+    }
+    .feature-caption {
+        font-size: 22px;
+    }
+}
+
+
 /* home end */
 
 /* about us */
@@ -277,7 +363,7 @@ a:hover {
     text-align: center;
     font-family: 'Chicle', cursive;
     letter-spacing: 0.12em;
-    text-shadow: 6px 1.5px 3px #babbbb;
+    text-shadow: 2px 1.5px 3px #babbbb;
     margin-bottom: 15px;
 }
 .contact-form-row {
@@ -305,6 +391,25 @@ a:hover {
 }
 .send-btn:hover {
     transform: scale(1.15);
+}
+@media screen and (max-width: 768px) {
+    .contact-details-container {
+        flex-wrap: wrap;
+    }
+    .detail-column {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .detail-column {
+        width: 100%;
+    }
+    .contact-name-field {
+        margin-bottom: 10px;
+    }
+    .send-btn {
+        width: 100%;
+    }
 }
 /* contact us end */
 

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
@@ -16,7 +15,49 @@
 </head>
     <body>
         <nav class="main-nav-container">
-            <ul class="main-nav-items-container container">
+            <ul class="nav-items-container-desktop container">
+                <li class="nav-item">
+                    <a class="nav-item-link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="./about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="./facilities.html">FACILITIES</a>
+                </li>
+                <li class="nav-item nav-logo-container">
+                    <a class="nav-logo-wrapper" href="./index.html">
+                        <img class="company-logo" src="./assets/images/logo.png" alt="company logo">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="./classes.html">CLASSES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link" href="./birthday.html">BIRTHDAYS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item-link active" href="contact_us.html">CONTACT</a>
+                </li>
+            </ul>
+            <div class="nav-items-container-mobile">
+                <div class="nav-logo-container">
+                    <a class="nav-logo-wrapper" href="./index.html">
+                        <img class="company-logo" src="./assets/images/logo.png" alt="company logo">
+                    </a>
+                </div><!--
+                --><div class="nav-toggler-container">
+                    <label for="navDropdownToggler">
+                        <span class="open">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                        <!-- <span class="close">
+                            <i class="fas fa-times"></i>
+                        </span> -->
+                    </label>
+                </div>
+                <input id="navDropdownToggler" type="checkbox">
+                <ul class="nav-list-mobile">
                     <li class="nav-item">
                         <a class="nav-item-link" href="./index.html">HOME</a>
                     </li>
@@ -25,11 +66,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-item-link" href="./facilities.html">FACILITIES</a>
-                    </li>
-                    <li class="nav-item nav-logo-container">
-                        <a class="nav-logo-wrapper" href="./index.html">
-                            <img class="company-logo" src="./assets/images/logo.png" alt="company logo">
-                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-item-link" href="./classes.html">CLASSES</a>
@@ -40,7 +76,8 @@
                     <li class="nav-item">
                         <a class="nav-item-link active" href="contact_us.html">CONTACT</a>
                     </li>
-            </ul>
+                </ul>
+            </div>
         </nav>
         <main class="main-content-container">
             <div class="home-banner-container">
@@ -56,7 +93,7 @@
             </div>
             <div class="intro-features-container container">
                 <div class="row">
-                    <div class="about-intro-container col-sm-5">
+                    <div class="about-intro-container col-sm-4">
                         <h2 class="about-intro-heading text-center red">
                             CHERISH THE MOMENT
                         </h2>
@@ -74,9 +111,9 @@
                             </button>
                         </div>
                     </div>
-                    <div class="features-container col-sm-7">
+                    <div class="features-container col-sm-8">
                         <div class="features-row row">
-                            <div class="feature col-6 col-sm-3">
+                            <div class="feature col-6 col-md-3">
                                 <a href="">
                                     <div class="feature-img-wrapper">
                                         <img class="feature-img" src="./assets/images/play.png" alt="play">
@@ -84,7 +121,7 @@
                                     <div class="feature-caption text-center">Play</div>
                                 </a>
                             </div>
-                            <div class="feature col-6 col-sm-3">
+                            <div class="feature col-6 col-md-3">
                                 <a href="">
                                     <div class="feature-img-wrapper">
                                         <img class="feature-img" src="./assets/images/classes.png" alt="play">
@@ -92,7 +129,7 @@
                                     <div class="feature-caption text-center">Classes</div>
                                 </a>
                             </div>
-                            <div class="feature col-6 col-sm-3">
+                            <div class="feature col-6 col-md-3">
                                 <a href="">
                                     <div class="feature-img-wrapper">
                                         <img class="feature-img" src="./assets/images/cafe.png" alt="play">
@@ -100,7 +137,7 @@
                                     <div class="feature-caption text-center">Cafe</div>
                                 </a>
                             </div>
-                            <div class="feature col-6 col-sm-3">
+                            <div class="feature col-6 col-md-3">
                                 <a href="">
                                     <div class="feature-img-wrapper">
                                         <img class="feature-img" src="./assets/images/birthday.png" alt="play">

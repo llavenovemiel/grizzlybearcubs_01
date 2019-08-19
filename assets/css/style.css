@@ -38,6 +38,9 @@ a:hover {
 .off-white {
     color: #f1f1f1;
 }
+.off-black {
+    color: #313639;
+}
 .primary-btn,
 .primary-link-btn {
     padding: 3px 15px 2px;
@@ -84,25 +87,32 @@ a:hover {
 }
 .nav-items-container-desktop {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    height: 100%;
 }
 .nav-items-container-mobile {
     display: none;
 }
 .company-logo {
     width: 300px;
+    max-width: 100%;
 }
 .nav-item {
     letter-spacing: 0.05em;
     font-size: 16px;
     font-weight: bold;
+    width: 12%;
+    text-align: center;
 }
 .nav-item-link {
     color: #232A34;
-    padding: 3px 15px 2px;
+    padding: 3px 10px 2px;
     border-radius: 15px;
+    white-space: nowrap;
+}
+.nav-logo-container {
+    width: 28%;
+    text-align: center;
 }
 .nav-item-link:hover,
 .nav-item.active > .nav-item-link {
@@ -119,16 +129,17 @@ a:hover {
     .nav-items-container-mobile {
         display: block;
         text-align: center;
+        height: 100%;
     }
     .nav-logo-container {
         width: 85%;
         padding-left: 15%;
         text-align: center;
         display: inline-block;
+        height: 100%;
     }
     .company-logo {
-        width: 250px;
-        max-width: 100%;
+        height: 105%;
     }
     .nav-toggler-container {
         width: 15%;
@@ -157,6 +168,7 @@ a:hover {
         border-bottom: 1.5px solid #2994d2;
         padding-top: 5px;
         padding-bottom: 5px;
+        width: 100%;
     }
 }
 /* nav bar styles end */
@@ -218,6 +230,10 @@ a:hover {
     font-family: 'Sniglet', cursive;
     letter-spacing: 0.1em;
 }
+.admission-container {
+    background: #e4e4e4;
+}
+.admission-heading,
 .carousel-heading {
     padding: 10px;
     background: #2994d2;
@@ -256,6 +272,13 @@ a:hover {
     background-position: center;
 }
 @media screen and (max-width: 930px) {
+    .home-banner-container {
+        height: 400px;
+    }
+    .welcome-message {
+        font-size: 50px;
+        width: 70%;
+    }
     .about-link {
         width: 100%;
     }
@@ -325,6 +348,11 @@ a:hover {
 .char-intro {
     text-align: justify;
 }
+@media screen and (max-width: 576px) {
+    .char-greeting {
+        text-align: center;
+    }
+}
 /* about us end */
 
 /* contact us */
@@ -353,7 +381,7 @@ a:hover {
     margin-bottom: 15px;
 }
 .contact-form-container {
-    padding-top: 165px;
+    padding-top: 175px;
     padding-bottom: 20px;
     background: url('../images/grass.png');
     background-size: cover;
@@ -390,7 +418,7 @@ a:hover {
     width: 180px;
 }
 .send-btn:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 @media screen and (max-width: 768px) {
     .contact-details-container {
@@ -412,6 +440,187 @@ a:hover {
     }
 }
 /* contact us end */
+/* birthdays */
+.birthdays-banner-container {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../images/birthday-banner.jpg');
+    background-position: center -60px;
+    background-repeat: no-repeat;
+}
+.birthdays-message {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 2px -1.5px 3px #f1f1f1, 2.5px -2.5px 7px #babbbb;
+}
+.birthdays-submessage {
+    font-family: 'Sniglet', cursive;
+    font-weight: bold;
+    margin-bottom: 2px;
+    font-size: 25px;
+    letter-spacing: 0.05em;
+}
+.birthday-btns-wrapper {
+    margin-top: 40px;
+}
+.call-us-btn,
+.email-us-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 150px;
+    display: inline-block;
+    letter-spacing: 0.08em;
+}
+.call-us-btn {
+    background-color: #ef3a4e;
+}
+.email-us-btn {
+    background-color: #f3d70e;
+    color: #313639 !important;
+}
+.birthdays-subbanner-container {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../images/birthday-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.birthdays-info-container {
+    width: 500px;
+    max-width: 100%;
+    background: #f2f2f2;
+    border-radius: 15px;
+    padding: 20px;
+}
+.birthdays-heading {
+    font-family: Sniglet, cursive;
+}
+.birthdays-info-text {
+    font-family: Sniglet, cursive;
+}
+.birthdays-info-text:last-child {
+    margin-bottom: 0;
+}
+.birthday-packages-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.birthday-package {
+    padding-left: 10%;
+    margin-bottom: 30px;
+}
+.package-heading-img {
+    width: 500px;
+}
+.package-price {
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 19px;
+    background: #babbbb;
+    border-radius: 15px;
+    position: relative;
+    top: 2px;
+}
+.birthday-package-details {
+    padding-left: 70px;
+    margin-top: 20px;
+}
+.package-days {
+    font-size: 20px;
+}
+.package-details {
+    padding-top: 10px;
+    padding-left: 30px;
+    list-style: initial;
+}
+.options-notif-container {
+    background: #2994d2;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px 50px;
+    text-align: justify;
+    font-family: Sniglet, cursive;
+    font-size: 20px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    .birthday-packages-container {
+        text-align: center;
+    }
+    .birthday-package {
+        padding-left: 0;
+    }
+    .package-details {
+        text-align: left;
+    }
+}
+@media screen and (max-width: 576px) {
+    .birthdays-banner-container {
+        height: 450px;
+        background-position: -275px -180px;
+    }
+    .birthdays-message {
+        font-size: 40px;
+        padding: 0;
+    }
+    .birthdays-submessage {
+        font-size: 18px;
+    }
+    .birthday-btns-wrapper {
+        margin-top: 30px;
+    }
+    .call-us-btn {
+        margin-bottom: 10px;
+    }
+    .birthdays-subbanner-container {
+        background-position: -632px;
+    }
+    .birthdays-info-container {
+        padding: 12px;
+    }
+    .birthdays-heading {
+        font-size: 28px;
+    }
+    .birthday-package-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .package-heading-img {
+        width: 280px;
+    }
+    .package-price {
+        font-size: 14px;
+        padding: 7px;
+        margin-left: 0;
+        border-radius: 8px;
+    }
+    .birthday-package-details {
+        padding-left: 0;
+    }
+    .options-notif-container {
+        margin: 0;
+        padding: 12px;
+    }
+    .contact-us-heading{
+        font-size: 22px;
+    }
+    .contact-name-field{
+        margin-bottom: 0;
+    }
+    .contact-field {
+        margin-bottom: 5px;
+    }
+}
+
+/* birthdays end */
 
 
 /* main styles end */
